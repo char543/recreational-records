@@ -79,9 +79,7 @@ export function HeroSection() {
             <div className='text-sm text-muted-foreground'>Releases</div>
           </div>
           <div className='text-center'>
-            <div className='text-2xl font-bold text-accent'>
-              0.000000000001M+
-            </div>
+            <div className='text-2xl font-bold text-accent'>0M+</div>
             <div className='text-sm text-muted-foreground'>Streams</div>
           </div>
         </div>
