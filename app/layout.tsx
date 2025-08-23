@@ -1,6 +1,7 @@
 import type React from "react"
 import { Geist, Manrope } from "next/font/google"
 import "./globals.css"
+import { PlayerProvider } from "@/contexts/player-context"
 
 const geist = Geist({
   subsets: ["latin"],
@@ -21,7 +22,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${geist.variable} ${manrope.variable} antialiased dark`}>
-      <body>{children}</body>
+      <body>
+        <PlayerProvider>
+          {children}
+        </PlayerProvider>
+      </body>
     </html>
   )
 }

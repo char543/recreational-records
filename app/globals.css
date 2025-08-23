@@ -186,4 +186,50 @@
   .pulse-green {
     animation: pulse-green 2s ease-in-out infinite;
   }
+
+  /* Volume slider styling */
+  input[type="range"].slider {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  input[type="range"].slider::-webkit-slider-track {
+    background: var(--muted);
+    height: 4px;
+    border-radius: 2px;
+  }
+
+  input[type="range"].slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: var(--primary);
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type="range"].slider::-webkit-slider-thumb:hover {
+    background: var(--primary);
+    transform: scale(1.2);
+  }
+
+  input[type="range"].slider::-moz-range-track {
+    background: var(--muted);
+    height: 4px;
+    border-radius: 2px;
+    border: none;
+  }
+
+  input[type="range"].slider::-moz-range-thumb {
+    background: var(--primary);
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+  }
 }
